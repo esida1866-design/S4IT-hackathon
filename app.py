@@ -175,6 +175,7 @@ worst_station = df.loc[df["pm25"].idxmax(), "station"]
 best_pm25 = df["pm25"].min()
 best_station = df.loc[df["pm25"].idxmin(), "station"]
 
+st.error(f"DEBUG: type(df)={type(df).__name__}, len(df)={len(df)}, avg={avg_pm25}, worst={worst_station}")
 
 # ------------------------------------------------------------------------------
 # METRIC CARDS — display the 4 numbers as Streamlit metric widgets
