@@ -1,0 +1,12 @@
+# ==============================================================================
+# requirements.txt
+# ==============================================================================
+# Streamlit Cloud reads this file and installs everything automatically.
+# Don't change versions unless something breaks.
+# ==============================================================================
+
+streamlit>=1.40.0                # The web framework
+folium>=0.18.0                   # Interactive maps
+streamlit-folium>=0.23.1         # Glue between Streamlit and Folium
+pandas>=2.3.0                    # Tabular data
+requests>=2.32.3                 # HTTP calls to OpenAQ
