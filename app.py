@@ -58,10 +58,10 @@ st.set_page_config(
 # See slide for the exact code.
 
 try:
-OPENAQ_API_KEY = st.secrets ["OPENAQ_API_KEY"]  
+    OPENAQ_API_KEY = st.secrets ["OPENAQ_API_KEY"]  
 except (KeyError, FileNotFoundError):
-OPENAQ_API_KEY = ""
-st.warning("⚠️ OpenAQ API key not configured. Using sample data only.")
+    OPENAQ_API_KEY = ""
+    st.warning("⚠️ OpenAQ API key not configured. Using sample data only.")
 # ------------------------------------------------------------------------------
 # === TODO 3 — CATEGORIZE PM2.5 INTO COLORED LABELS ===
 # ------------------------------------------------------------------------------
